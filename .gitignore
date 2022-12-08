@@ -1,0 +1,16 @@
+.pnpm-store
+**/node_modules
+**/dist
+**/lib
+**/temp
+**/release
+tsconfig.tsbuildinfo
+.idea
+_tmp_*
+.turbo
+.eslintcache
+.pnpm-debug.log
+.rollup.cache
+.nx
+**/*.scss.ts
+**/*.scss.d.ts

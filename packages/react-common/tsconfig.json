@@ -1,0 +1,16 @@
+{
+    "extends": "../../tsconfig.lib.json",
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.tsx"
+    ],
+    "compilerOptions": {
+        "outDir": "./lib",
+        "baseUrl": "./src"
+    },
+    "references": [
+        {
+            "path": "..\\common"
+        }
+    ]
+}
