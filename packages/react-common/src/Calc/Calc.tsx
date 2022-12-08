@@ -7,19 +7,12 @@ const Calc: React.FC = () => {
 
     const [result, setResult] = React.useState(0);
 
-    const handleFirstChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setFirst(Number(e.target.value));
-    };
-
-    const handleSecondChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setSecond(Number(e.target.value));
-    }
-
     return (
         <div>
-            <input type="number" value={first} onChange={handleFirstChange} />
-            <input type="number" value={second} onChange={handleSecondChange} />
+            <input type="number" value={first} onChange={(e) => setFirst(Number(e.target.value))} />
+            <input type="number" value={second} onChange={(e) => setSecond(Number(e.target.value))} />
             <button onClick={() => add(first, second)}>+</button>
+            <p>{result}</p>
         </div>
     );
 

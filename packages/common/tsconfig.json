@@ -6,11 +6,6 @@
     ],
     "compilerOptions": {
         "outDir": "./lib",
-        "baseUrl": "./src",
-        "paths": {
-            "@so365-sodoc/common": [
-                "../common"
-            ],
-        }
+        "baseUrl": "./src"
     }
 }
